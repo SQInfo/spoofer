@@ -2,10 +2,10 @@
 
 from distutils.core import setup
 
-scripts = ['scripts/spoofer']
+scripts = ['main/spoofer']
 try:
     import fuse
-    scripts.append('scripts/spoofer')
+    scripts.append('main/spoofersh')
 except ImportError:
     print "python-fuse not detected, not installing the spoofer."
     print "You can still use the spoofer for a ftp-like interface"
